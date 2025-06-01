@@ -4,255 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<style>
-    * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-/* navigation-section */
-
-.nav-container {
-    /* border: 2px solid greenyellow; */
-    display: flex;
-    height: 30px;
-    background-color: #1F2937;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10px;
-}
-
-.nav-links {
-    /* border: 2px solid greenyellow; */
-    display: flex;
-    justify-content: space-between;
-    width: 200px;
-    margin-right: 50px;
-    /* outline: 2px solid rebeccapurple; */
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #d3d4d6;
-    font-weight: 300;
-    /* border: 2px solid greenyellow; */
-}
-
-.nav-links a:hover {
-    color: white;
-}
-
-.logo {
-    margin-left: 50px;
-    /* border: 2px solid greenyellow; */
-}
-
-/* hero-section */
-
-.hero {
-    height: 400px;
-    background-color: #1F2937;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 100px;
-    /* border: 2px solid greenyellow; */
-}
-
-.hero_info {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: flex-start; */
-    align-items: flex-start;
-    min-width: 300px;
-    padding: 16px;
-    gap: 1rem;
-    flex: 1;
-    /* border: 2px solid greenyellow; */
-
-}
-
-.hero .img_placeh {
-    flex: 1;
-    height: 300px;
-    width: 400px;
-    margin: 10px;
-    background-color: grey;
-    border-radius: 10px;
-    /* border: 2px solid greenyellow; */
-}
-
-.hero h1 {
-    color: #f9faf8;
-    font-size: 46px;
-    /* border: 2px solid greenyellow; */
-}
-
-.hero p {
-    color: #e5e7eb;
-    font-size: 18px;
-    /* border: 2px solid greenyellow; */
-}
-
-.signup {
-    width: 100px;
-    padding: 5px 3px;
-    background-color: #3882f6;
-    border: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-    border-radius: 5px;
-    color: #f9faf8;
-    /* border: 2px solid greenyellow; */
-}
-
-/* random-information */
-.random-info {
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    background-color: #ffffff;
-    /* border: 2px solid red; */
-    padding: 30px;
-    gap: 2rem;
-}
-
-.cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    flex: 1;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-width: 100px;
-    max-width: 300px;
-    /* border: 2px solid red; */
-    padding: 10px;
-    text-align: center;
-    gap: 1rem;
-}
-
-.card .img {
-    height: 150px;
-    width: 150px;
-    background-color: #ffffff;
-    border: 4px solid #3882f6;
-    border-radius: 16px;
-}
-
-.random-info-h2 {
-    font-size: 32px;
-    text-align: center;
-}
-
-/* Quote */
-
-.quote-sec {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    background-color: #E5E7EB;
-    padding: 50px 200px;
-}
-
-.quote {
-    /* border: 2px solid red; */
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.quote p {
-    font-size: 24px;
-    color: #1F2937;
-}
-
-.quote h3 {
-    margin-right: 18px;
-    font-size: 22px;
-}
-
-/* Action section */
-
-.action-section {
-    height: 260px;
-    display: flex;
-    justify-content: center;
-    justify-content: center;
-    padding: 70px 100px;
-    color: #E5E7EB
-}
-
-.signup-card {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 8rem;
-    padding: 20px;
-    /* width: 500px; */
-    background-color: #3882f6;
-    border-radius: 12px;
-    flex: 1;
-}
-
-.text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.signup-card button {
-    font-size: 16px;
-    text-align: center;
-    color: #e5e7eb;
-    width: 100px;
-    padding: 5px 3px;
-    border-radius: 8px;
-    border: 2px solid #E5E7EB;
-    background-color: #3882f6;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    background-color: #1F2937;
-    padding: 10px;
-}
-
-.footer p {
-    color: #e5e7eb;
-}
-</style>
 </head>
 <body>
     <header>
         <nav class="nav-container">
-            <img class="logo" src="/images/logo_light.svg" alt="logo" height="60px">
+            <img class="logo" src="images/logo_light.svg" alt="logo" height="60px">
             <div class="nav-links">
                 <a href="">Projects</a>
                 <a href="">Contact</a>
@@ -266,14 +26,14 @@
         <div class="hero">
             <div class="hero_info">
                 <h1>This website is awesome</h1>
-                <p>This website has some subtext that goes here ubder the main title. Its a smaller font and the color is lower contrast</p>
+                <p>This website has some subtext that goes here under the main title. Its a smaller font and the color is lower contrast.</p>
                 <button type="button" class="signup">Sign up</button>
             </div>
 
             <div class="img_placeh"></div>
         </div>
         <div class="random-info">
-            <h2 class="random-info-h2">Some random infromation.</h2>
+            <h2 class="random-info-h2">Some random information.</h2>
             <div class="cards">
                 <div class="card">
                     <div class="img"></div>
@@ -295,7 +55,7 @@
         </div>
         <div class="quote-sec">
             <div class="quote">
-                <p>This is an inspiring quote or testemonial form a customer. Or maybe its just a dummy text who knows. I just need it for a placeholder.</p>
+                <p>This is an inspiring quote or testimonial form a customer. Or maybe its just a dummy text who knows. I just need it for a placeholder.</p>
                 <h3>-Customer</h3>
             </div>
         </div>
